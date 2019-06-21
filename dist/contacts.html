@@ -16,7 +16,12 @@
         <img src="./images/logo-white.svg" class="header-logo__image"></img>
         <a href="/" class="header-logo__link">aleromplast</a>
     </div>
-    <ul class="header-nav">
+    <div class="menu-btn js_menu-btn">
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+    </div>
+    <ul class="header-nav js_header-nav">
         <li class="header-nav-item">
             <a href="./" class="header-nav__link">о нас</a>
         </li>
@@ -31,41 +36,43 @@
         </li>
     </ul>
 </header>
-    <section class="section section-contacts">
-        <h1 class="section__title">контакты</h1>
-        <div class="contacts">
-            <div class="contacts-content">
-                <p class="text align-left">Москва, м. Кантемировкая ул. Кантемировская, д. 60 Работаем с понедельника по пятницу с 9:00 до 19:00
-                    <a href="tel:74996784560" class="link">+7 (499) 678-45-60</a></p>
-                <form action="#0" class="form">
-                    <div class="form-body">
-                        <fieldset class="form-group">
-                            <input type="text" name="" class="form__input js_form__field">
-                            <legend class="form__placeholder">Имя</legend>
+    <div class="content">
+        <section class="section section-contacts">
+            <h1 class="section__title">контакты</h1>
+            <div class="contacts">
+                <div class="contacts-content">
+                    <p class="text align-left">Москва, м. Кантемировкая ул. Кантемировская, д. 60 Работаем с понедельника по пятницу с 9:00 до 19:00
+                        <a href="tel:74996784560" class="link">+7 (499) 678-45-60</a></p>
+                    <form action="#0" class="form">
+                        <div class="form-body">
+                            <fieldset class="form-group">
+                                <input type="text" name="" class="form__input js_form__field">
+                                <legend class="form__placeholder">Имя</legend>
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <input type="text" name="" class="form__input js_form__field">
+                                <legend class="form__placeholder">Телефон</legend>
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <input type="email" name="" class="form__input js_form__field">
+                                <legend class="form__placeholder">Почта</legend>
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <textarea name="" class="form__textarea js_form__field"></textarea>
+                                <legend class="form__placeholder">Сообщение</legend>
+                            </fieldset>
+                        </div>
+                        <fieldset class="form-checkbox">
+                            <input type="checkbox" id="form-agree" class="form-checkbox__input">
+                            <label for="form-agree" class="form-checkbox-label">Согласие на обработку данных</label>
                         </fieldset>
-                        <fieldset class="form-group">
-                            <input type="text" name="" class="form__input js_form__field">
-                            <legend class="form__placeholder">Телефон</legend>
-                        </fieldset>
-                        <fieldset class="form-group">
-                            <input type="email" name="" class="form__input js_form__field">
-                            <legend class="form__placeholder">Почта</legend>
-                        </fieldset>
-                        <fieldset class="form-group">
-                            <textarea name="" class="form__textarea js_form__field"></textarea>
-                            <legend class="form__placeholder">Сообщение</legend>
-                        </fieldset>
-                    </div>
-                    <fieldset class="form-checkbox">
-                        <input type="checkbox" id="form-agree" class="form-checkbox__input">
-                        <label for="form-agree" class="form-checkbox-label">Согласие на обработку данных</label>
-                    </fieldset>
-                    <button type="submit" class="btn form__btn">Связаться с нами</button>
-                </form>
+                        <button type="submit" class="btn form__btn">Связаться с нами</button>
+                    </form>
+                </div>
+                <div class="map"></div>
             </div>
-            <div class="map"></div>
-        </div>
-    </section>
+        </section>
+    </div>
     <footer class="bg-blue">
     <p class="footer__text text-white">© 2019, ALEROMPLAST. Все права защищены</p>
     <a href="tel:88000000000" class="footer__link text-white">8 800 000 00 00</a>

@@ -5,15 +5,26 @@ function ready() {
     variables
     ==========*/
 
+    const TABLET_WIDTH = 980;
+
     var body = document.body;
     var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    var header = $('header').eq(0);
     var cards = $('.js_cards');
     var slider = $('.js_slider');
     var formFields = $('.js_form__field');
+    var headerNav = $('.js_header-nav').eq(0);
+    var menuBtn = $('.js_menu-btn').eq(0);
+    var sidebar = $('.js_sidebar').eq(0);
+    var sidebarTitle = $('.js_sidebar-item-title').eq(0);
+    var sidebarBtnClose = $('.js_sidebarClose').eq(0);
 
     /*==========
     events
     ==========*/
+    if (menuBtn) {
+        menuBtn.on('click', onMenuBtnClick);
+    }
 
     if (slider.length > 0) {
         initSwiper();
@@ -26,6 +37,27 @@ function ready() {
     if (formFields.length > 0) {
         onFormFieldFocus();
     }
+
+    if (sidebarTitle && sidebarBtnClose) {
+        sidebarTitle.on('click', openSidebar);
+        sidebarBtnClose.on('click', closeSidebar);
+    }
+
+    $(window).resize(function() {
+        windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    });
+
+    $(document).scroll(function() {
+        if (location.pathname === '/') {
+            var scrollOffset = $(window).scrollTop();
+
+            if (windowWidth <= TABLET_WIDTH && scrollOffset >= header.height()) {
+                header.addClass('bg-blue');
+            } else {
+                header.removeClass('bg-blue');
+            }
+        }
+    });
 
     /*==========
     functions
@@ -52,10 +84,12 @@ function ready() {
     }
 
     function initSwiper() {
+        var fraction = windowWidth <= TABLET_WIDTH ? 'fraction' : '';
         var swiper = new Swiper(slider, {
             pagination: {
                 el: '.slider-pagination',
-                clickable: true
+                clickable: true,
+                type: fraction
             },
             navigation: {
                 nextEl: '.slider-button-next',
@@ -75,5 +109,18 @@ function ready() {
                 }
             });
         });
+    }
+
+    function onMenuBtnClick() {
+        menuBtn.toggleClass('menu-btn--open');
+        headerNav.toggleClass('header-nav--open');
+    }
+
+    function openSidebar() {
+        sidebar.addClass('sidebar--open');
+    }
+
+    function closeSidebar() {
+        sidebar.removeClass('sidebar--open');
     }
 }

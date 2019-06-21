@@ -16,7 +16,12 @@
         <img src="./images/logo-white.svg" class="header-logo__image"></img>
         <a href="/" class="header-logo__link">aleromplast</a>
     </div>
-    <ul class="header-nav">
+    <div class="menu-btn js_menu-btn">
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+    </div>
+    <ul class="header-nav js_header-nav">
         <li class="header-nav-item">
             <a href="./" class="header-nav__link">о нас</a>
         </li>
@@ -31,170 +36,150 @@
         </li>
     </ul>
 </header>
-    <section class="section single-product">
-        <div class="single-product-wrap">
-            <div class="single-product-image-wrap">
-                <img src="./images/product-1.png" alt="" class="single-product__image">
-            </div>
-            <div class="product-desc">
-                <h1 class="product__title">Муфта соединительная POELSAN</h1>
-                <div class="product-desc-item">
-                    <span class="product-desc__title">Бренд</span>
-                    <span class="product-desc__name">Poelsan</span>
+    <div class="content">
+        <section class="section single-product">
+            <div class="single-product-wrap">
+                <div class="single-product-image-wrap">
+                    <img src="./images/product-1.png" alt="" class="single-product__image">
                 </div>
-                <div class="product-desc-item">
-                    <span class="product-desc__title">Модель</span>
-                    <span class="product-desc__name">Coupling</span>
+                <div class="product-desc">
+                    <h1 class="product__title">Муфта соединительная POELSAN</h1>
+                    <div class="product-desc-item">
+                        <span class="product-desc__title">Бренд</span>
+                        <span class="product-desc__name">Poelsan</span>
+                    </div>
+                    <div class="product-desc-item">
+                        <span class="product-desc__title">Модель</span>
+                        <span class="product-desc__name">Coupling</span>
+                    </div>
+                    <img src="./images/product-draft.svg" class="product__image-draft">
                 </div>
-                <img src="./images/product-draft.svg" class="product__image-draft">
             </div>
-        </div>
-        <div class="product-table">
-            <ul class="product-table-line">
-                <li class="product-table__cell">
-                    <p class="product-table__text">Код</p>
+            <div class="product-table">
+                <ul class="product-table-line">
+                    <li class="product-table__cell">
+                        <p class="product-table__text">Код</p>
+                    </li>
+                    <li class="product-table__cell">
+                        <p class="product-table__text">Размер</p>
+                    </li>
+                    <li class="product-table__cell product-table__cell-big">
+                        <p class="product-table__text desktop">В упаковке</p>
+                        <p class="product-table__text desktop">В коробке</p>
+                        <p class="product-table__text desktop">Доступность</p>
+                        <p class="product-table__text mobile">Количество</p>
+                    </li>
+                    <li class="product-table__cell">
+                        <p class="product-table__text">Цена</p>
+                    </li>
+                </ul>
+                <ul class="product-table-line">
+                    <li class="product-table__cell">
+                        <p class="product-table__text">1000211</p>
+                    </li>
+                    <li class="product-table__cell">
+                        <p class="product-table__text">20х20мм</p>
+                    </li>
+                    <li class="product-table__cell product-table__cell-big">
+                        <p class="product-table__text desktop">25</p>
+                        <p class="product-table__text desktop">700</p>
+                        <p class="product-table__text desktop"><i class="product-table__icon product-table__icon-check"></i></p>
+                        <p class="product-table__text mobile">
+                            <span class="product-table__span">В упаковке</span>
+                            <span class="product-table__span">25</span>
+                        </p>
+                        <p class="product-table__text mobile">
+                            <span class="product-table__span">В коробке</span>
+                            <span class="product-table__span">700</span>
+                        </p>
+                        <p class="product-table__text mobile">
+                            <span class="product-table__span">Доступность</span>
+                            <span class="product-table__span">
+                                <i class="product-table__icon product-table__icon-check"></i>
+                            </span>
+                        </p>
+                    </li>
+                    <li class="product-table__cell">
+                        <p class="product-table__text">22,85 Р</p>
+                    </li>
+                </ul>
+                <ul class="product-table-line">
+                    <li class="product-table__cell">
+                        <p class="product-table__text">1000211</p>
+                    </li>
+                    <li class="product-table__cell">
+                        <p class="product-table__text">20х20мм</p>
+                    </li>
+                    <li class="product-table__cell product-table__cell-big">
+                        <p class="product-table__text desktop">25</p>
+                        <p class="product-table__text desktop">700</p>
+                        <p class="product-table__text desktop"><i class="product-table__icon product-table__icon-check"></i></p>
+                        <p class="product-table__text mobile">
+                            <span class="product-table__span">В упаковке</span>
+                            <span class="product-table__span">25</span>
+                        </p>
+                        <p class="product-table__text mobile">
+                            <span class="product-table__span">В коробке</span>
+                            <span class="product-table__span">700</span>
+                        </p>
+                        <p class="product-table__text mobile">
+                            <span class="product-table__span">Доступность</span>
+                            <span class="product-table__span">
+                                <i class="product-table__icon product-table__icon-check"></i>
+                            </span>
+                        </p>
+                    </li>
+                    <li class="product-table__cell">
+                        <p class="product-table__text">22,85 Р</p>
+                    </li>
+                </ul>
+                <ul class="product-table-line">
+                    <li class="product-table__cell">
+                        <p class="product-table__text">1000211</p>
+                    </li>
+                    <li class="product-table__cell">
+                        <p class="product-table__text">20х20мм</p>
+                    </li>
+                    <li class="product-table__cell product-table__cell-big">
+                        <p class="product-table__text desktop">25</p>
+                        <p class="product-table__text desktop">700</p>
+                        <p class="product-table__text desktop"><i class="product-table__icon product-table__icon-check"></i></p>
+                        <p class="product-table__text mobile">
+                            <span class="product-table__span">В упаковке</span>
+                            <span class="product-table__span">25</span>
+                        </p>
+                        <p class="product-table__text mobile">
+                            <span class="product-table__span">В коробке</span>
+                            <span class="product-table__span">700</span>
+                        </p>
+                        <p class="product-table__text mobile">
+                            <span class="product-table__span">Доступность</span>
+                            <span class="product-table__span">
+                                <i class="product-table__icon product-table__icon-minus"></i>
+                            </span>
+                        </p>
+                    </li>
+                    <li class="product-table__cell">
+                        <p class="product-table__text">22,85 Р</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn product-btn">Связаться с нами</button>
+        </section>
+        <div class="product-content-wrap">
+            <ul class="product-tabs">
+                <li class="product-tabs-item">
+                    <p class="product-tabs__text product-tabs__text--active" data-type="description">Описание</p>
                 </li>
-                <li class="product-table__cell">
-                    <p class="product-table__text">Размер</p>
-                </li>
-                <li class="product-table__cell">
-                    <p class="product-table__text desktop">В упаковке</p>
-                    <p class="product-table__text desktop">В коробке</p>
-                    <p class="product-table__text desktop">Доступность</p>
-                    <p class="product-table__text mobile">Количество</p>
-                </li>
-                <li class="product-table__cell">
-                    <p class="product-table__text">Цена</p>
-                </li>
-            </ul>
-            <ul class="product-table-line">
-                <li class="product-table__cell">
-                    <p class="product-table__text">1000211</p>
-                </li>
-                <li class="product-table__cell">
-                    <p class="product-table__text">20х20мм</p>
-                </li>
-                <li class="product-table__cell desktop">
-                    <p class="product-table__text">25</p>
-                </li>
-                <li class="product-table__cell desktop">
-                    <p class="product-table__text">700</p>
-                </li>
-                <li class="product-table__cell desktop">
-                    <p class="product-table__text">
-                        <i class="product-table__icon product-table__icon-check"></i>
-                    </p>
-                </li>
-                <li class="product-table__cell mobile">
-                    <p class="product-table__text">
-                        <span class="product-table__span">В упаковке</span>
-                        <span class="product-table__span">25</span>
-                    </p>
-                    <p class="product-table__text">
-                        <span class="product-table__span">В коробке</span>
-                        <span class="product-table__span">700</span>
-                    </p>
-                    <p class="product-table__text">
-                        <span class="product-table__span">Доступность</span>
-                        <span class="product-table__span">
-                            <i class="product-table__icon product-table__icon-check"></i>
-                        </span>
-                    </p>
-                </li>
-                <li class="product-table__cell">
-                    <p class="product-table__text">22,85 Р</p>
-                </li>
-            </ul>
-            <ul class="product-table-line">
-                <li class="product-table__cell">
-                    <p class="product-table__text">1000211</p>
-                </li>
-                <li class="product-table__cell">
-                    <p class="product-table__text">20х20мм</p>
-                </li>
-                <li class="product-table__cell desktop">
-                    <p class="product-table__text">25</p>
-                </li>
-                <li class="product-table__cell desktop">
-                    <p class="product-table__text">700</p>
-                </li>
-                <li class="product-table__cell desktop">
-                    <p class="product-table__text">
-                        <i class="product-table__icon product-table__icon-check"></i>
-                    </p>
-                </li>
-                <li class="product-table__cell mobile">
-                    <p class="product-table__text">
-                        <span class="product-table__span">В упаковке</span>
-                        <span class="product-table__span">25</span>
-                    </p>
-                    <p class="product-table__text">
-                        <span class="product-table__span">В коробке</span>
-                        <span class="product-table__span">700</span>
-                    </p>
-                    <p class="product-table__text">
-                        <span class="product-table__span">Доступность</span>
-                        <span class="product-table__span">
-                            <i class="product-table__icon product-table__icon-check"></i>
-                        </span>
-                    </p>
-                </li>
-                <li class="product-table__cell">
-                    <p class="product-table__text">22,85 Р</p>
-                </li>
-            </ul>
-            <ul class="product-table-line">
-                <li class="product-table__cell">
-                    <p class="product-table__text">1000211</p>
-                </li>
-                <li class="product-table__cell">
-                    <p class="product-table__text">20х20мм</p>
-                </li>
-                <li class="product-table__cell desktop">
-                    <p class="product-table__text">25</p>
-                </li>
-                <li class="product-table__cell desktop">
-                    <p class="product-table__text">700</p>
-                </li>
-                <li class="product-table__cell desktop">
-                    <p class="product-table__text">
-                        <i class="product-table__icon product-table__icon-check"></i>
-                    </p>
-                </li>
-                <li class="product-table__cell mobile">
-                    <p class="product-table__text">
-                        <span class="product-table__span">В упаковке</span>
-                        <span class="product-table__span">25</span>
-                    </p>
-                    <p class="product-table__text">
-                        <span class="product-table__span">В коробке</span>
-                        <span class="product-table__span">700</span>
-                    </p>
-                    <p class="product-table__text">
-                        <span class="product-table__span">Доступность</span>
-                        <span class="product-table__span">
-                            <i class="product-table__icon product-table__icon-minus"></i>
-                        </span>
-                    </p>
-                </li>
-                <li class="product-table__cell">
-                    <p class="product-table__text">22,85 Р</p>
+                <li class="product-tabs-item">
+                    <p class="product-tabs__text">Отзывы</p>
                 </li>
             </ul>
-        </div>
-        <button class="btn product-btn">Связаться с нами</button>
-    </section>
-    <div class="product-content-wrap">
-        <ul class="product-tabs">
-            <li class="product-tabs-item">
-                <p class="product-tabs__text product-tabs__text--active" data-type="description">Описание</p>
-            </li>
-            <li class="product-tabs-item">
-                <p class="product-tabs__text">Отзывы</p>
-            </li>
-        </ul>
-        <div class="product-content bg-gray" data-type="description">
-            <p class="text">Муфта компрессионная Poelsan имеет корпус, который изготавливается из полиэтилена, что сильно отличает муфту компрессионную Poelsan от муфт компрессионных других производителей, производящих корпуса свох фитингов из полипропилена. Изначально полиэтилен более пригоден для использования труб и соединительных деталей, которые будут работать на улице или под землей, так, при замерзании воды, полиэтилен не колется и не трескается, в отличии от полипропилена. Муфта соединительная компрессионная "зеленой серии" обеспечивает надежное соединение двух полиэтиленовых труб равного диаметра между собой, при строительстве систем питьевого или технического водопровода, систем напорной или безнапорной канализации, для устройства кабельных каналов из ПНД труб с рабочим давлением до 10 атмосфер для труб диаметром от 20мм до 63мм и до 6 атмосфер для труб диаметром от 75 до 110 мм.</p>
+            <div class="bg-gray">
+                <div class="product-content" data-type="description">
+                    <p class="text">Муфта компрессионная Poelsan имеет корпус, который изготавливается из полиэтилена, что сильно отличает муфту компрессионную Poelsan от муфт компрессионных других производителей, производящих корпуса свох фитингов из полипропилена. Изначально полиэтилен более пригоден для использования труб и соединительных деталей, которые будут работать на улице или под землей, так, при замерзании воды, полиэтилен не колется и не трескается, в отличии от полипропилена. Муфта соединительная компрессионная "зеленой серии" обеспечивает надежное соединение двух полиэтиленовых труб равного диаметра между собой, при строительстве систем питьевого или технического водопровода, систем напорной или безнапорной канализации, для устройства кабельных каналов из ПНД труб с рабочим давлением до 10 атмосфер для труб диаметром от 20мм до 63мм и до 6 атмосфер для труб диаметром от 75 до 110 мм.</p>
+                </div>
+            </div>
         </div>
     </div>
     <footer class="bg-blue">
