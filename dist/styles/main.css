@@ -362,7 +362,7 @@ header {
 }
 
 .section {
-    padding: 5.944vw 0;
+    padding: 4vw 0;
     text-align: center;
     width: 97.891vw;
     margin: 0 auto;
@@ -379,11 +379,11 @@ header {
 }
 
 .section__title {
-    font-size: 3.333vw;
+    font-size: 2.5vw;
     font-weight: 800;
     text-transform: uppercase;
     padding: 0 0 1.789vw 0;
-    margin: 0 0 3.667vw 0;
+    margin: 0 0 2vw 0;
     position: relative;
     text-align: center;
 }
@@ -602,7 +602,7 @@ header {
 /*====== contact page ======*/
 
 .section-contacts {
-    padding-bottom: 7vw;
+    padding-bottom: 4vw;
     width: 100%;
 }
 
@@ -628,7 +628,7 @@ header {
 
 .form {
     text-align: left;
-    margin-top: 3vw;
+    margin-top: 2vw;
 }
 
 .form-body {
@@ -692,9 +692,16 @@ header {
     border-radius: 0 0 0.278vw 0.278vw;
 }
 
-.form-checkbox {
+.form-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 1.736vw 0 0 0;
+}
+
+.form-checkbox {
     position: relative;
+    width: 50%;
 }
 
 .form-checkbox__input {
@@ -739,18 +746,16 @@ header {
     display: inline-block;
     cursor: pointer;
     font-size: 1.111vw;
-    height: 20px;
-    line-height: 20px;
+    line-height: 1.2;
 }
 
 .form__btn {
     width: 14.583vw;
-    margin: 2.083vw 0 0 0;
 }
 
 .map {
     width: 50.000vw;
-    height: 36.806vw;
+    height: 29vw;
     background: url(../images/map.jpg) no-repeat center center;
     background-size: cover;
 }
