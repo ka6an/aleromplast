@@ -219,8 +219,8 @@ a {
 
 .main-top {
     background: linear-gradient(26.4deg, #6077b5 0%, #6b83c9 25%, #6077b5 25%, #6b83c9 50%, #26313e 50%, #222c38 75%, #26313e 75%, #26313e 100%);
-    height: 100vh;
-    min-height: 600px;
+    /* height: 100vh; */
+    /* min-height: 600px; */
 }
 
 header {
@@ -270,32 +270,35 @@ header {
     display: inline-block;
     height: 100%;
     transition: color .4s ease;
+    border-bottom: 4px solid transparent;
 }
 
 .header-nav__link--active {
-    background: var(--orange);
+    border-bottom-color: var(--orange);
     color: var(--white) !important;
 }
 
 .slider {
     width: 100%;
-    height: calc(100vh - 6.250vw);
-    min-height: calc(600px - 6.250vw);
+    margin-top: 3vw!important;
+    padding-bottom: 3vw!important;
+    /* height: calc(100vh - 6.250vw); */
+    /* min-height: calc(600px - 6.250vw); */
 }
 
 .slider-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 9.375vw;
+    padding: 0 20vw;
 }
 
 .slider-content {
-    width: 38.194vw;
+    width: 50%;
 }
 
 .slider__image {
-    width: 39.583vw;
+    width: 20vw;
     height: auto;
     display: block;
     object-fit: cover;
@@ -304,16 +307,16 @@ header {
 .slider__title {}
 
 .slider__title-span {
-    font-size: 5.000vw;
+    font-size: 3vw;
     font-weight: 800;
-    line-height: 4.306vw;
+    line-height: 3vw;
     display: inline-block;
     width: 100%;
 }
 
 .slider__desc {
-    font-size: 2.083vw;
-    margin: 1.042vw 0 0 0;
+    font-size: 1.5vw;
+    margin: .5vw 0 0 0;
 }
 
 .slider__btn {
@@ -370,8 +373,8 @@ header {
 
 .section-about,
 .section-main-catalog {
-    padding-top: 8.028vw;
-    padding-bottom: 9.028vw;
+    /* padding-top: 8.028vw; */
+    /* padding-bottom: 9.028vw; */
 }
 
 .section>*:first-child {
@@ -602,7 +605,7 @@ header {
 /*====== contact page ======*/
 
 .section-contacts {
-    padding-bottom: 4vw;
+    padding: 0;
     width: 100%;
 }
 
@@ -611,6 +614,8 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-left: 9.333vw;
+    height: calc(100vh - 6.250vw - 6.944vw);
+    min-height: 500px;
 }
 
 .contacts-content {
